@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+#http://127.0.0.1:8000/  ==> anasayfa.html
+#http://127.0.0.1:8000/index  ==> anasayfa.html
+#http://127.0.0.1:8000/login  ==> login.html
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    
 ]
